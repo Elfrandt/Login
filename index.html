@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"; maximum-scale=1.0;”>
-    <title>Cece Meily Comel</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h2 class="logo">SC</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="btnlogin-popup">Login</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cece Meily Comel</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+            <audio id="background-audio" loop>
+                <source src="Healing Song - Piano Peace (Peaceful Relaxation Piano Music).mp3" type="audio/mpeg">
+                <source src="Healing Song - Piano Peace (Peaceful Relaxation Piano Music).ogg" type="audio/ogg">
+            </audio>
+            
+            <script>
+                const audio = document.getElementById('background-audio');
+            
+                function playAudio() {
+                    audio.play().catch(error => {
+                        console.log('Autoplay failed, please interact with the page to play audio');
+                    });
+                }
+            
+                document.addEventListener('click', playAudio);
+                document.addEventListener('keypress', playAudio);
+                </script>
 
+        <header>
+        <h2 class="logo">EL</h2>
+        <nav class="navigation">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">Gift</a>
+            <button class="btnlogin-popup">Login</button>
         </nav>
     </header>
-
-    <div class="wrapper">
-        <span class="icon-close">
-            <ion-icon name="close-outline"></ion-icon>
-        </span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </span>
-                    <input type="email" required>
-                    <label >Email</label>
+    
+    <div class="contents">
+        <section id="Home">
+            <div class="main-container">
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Meily!</span></h1>
+                    <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">My name is Meily Trianita Liebridha! I'm now studying at Tarumanagara University in Faculty of Economics and Business</p>
+                    <div class="social-links">
+                        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/meiliebridha/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="bton" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1800">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+                <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                    <img src="WhatsApp Image 2024-09-17 at 22.37.54.jpeg" alt="">
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <input type="email" required>
+                            <label >Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
@@ -93,10 +135,83 @@
                 </div>
             </form>
         </div> 
-
     </div>
+</section>
+
+    <section id="About" class="About">
+        <div class="about-image">
+            <img src="WhatsApp Image 2024-09-17 at 22.37.54.jpeg" alt="">
+        </div>
+        
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <div class="contents">
+            <h3 class="Mama">I'm a <span>College Student</span></h3>
+             <p>Hello! my name is Meily Trianita Liebridha, I'm born at 08 May 2006. Now I'm studying at Tarumanagara University in accounting department. I have many skills that support me at accounting, also I like to help people! You can call me at WhatsApp / 0878-7377-8112</p>
+             <a href="#" class="btn">Read More!</a>
+        </div>
+    </section>
+
+    
+    <section id="Services" class="Services">
+        <div class="section-services">
+            <div class="main-texts">
+                <span>what I will do for you</span>
+                <h2>Our Services</h2>
+            </div>    
+            
+            <div class="service-box">
+                <i class="service-icon"><box-icon name='video-recording' type='solid'></box-icon></i>
+                <h3>Transaction Recording</h3>
+        <p>
+            The process of documenting every financial transaction that occurs, including both receipts and expenditures. This encompasses sales, purchases, and operational expenses. Accurate recording is crucial for producing reliable financial statements.
+        </p>
+        <div class="btn-box service-btn">
+            <a href="#" class="Tombols">Read More</a>
+    </div>
+    </div>
+        
+        <div class="service-box">
+           <i class="service-icon"><box-icon name='money-withdraw'></box-icon></i>
+            <h3>Preparation of Financial Statements</h3>
+            <p>
+                Prepare financial statements such as the balance sheet, income statement, and cash flow statement. These reports provide a comprehensive overview of a company's financial health, including assets, liabilities, revenue, and cash flow.
+            </p>
+            <div class="btn-box service-btn">
+                <a href="#" class="Tombols">Read More</a>
+    </div>
+    </div>
+
+    <div class="service-box">
+        <i class="service-icon"><box-icon type='solid' name='bank'></box-icon></i>
+        <h3>Auditing</h3>
+        <p>
+            independent examination of a company financial statements. Auditors assess the accuracy and compliance of reports with generally accepted accounting principles (GAAP) or international financial reporting standards (IFRS).
+        </p>
+        <div class="btn-box service-btn">
+            <a href="#" class="Tombols">Read More</a>
+    </div>
+    </div>
+</div>
+    </section>
+
+    <section id="Contact">
+        <div class="Klik-rek">    
+            <a href="#" class="Klik">Pencet Aku donk Sayang😘</a>
+        </div>
+    </section>
+</div>
+
     <script src="scripts.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+      AOS.init({offset:0,});
+    </script>
+    <script src="script.js"></script>
+
 </body>
 </html>
